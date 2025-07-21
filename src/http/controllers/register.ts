@@ -13,7 +13,6 @@ export async function register(request: FastifyRequest, reply: FastifyReply) {
     try {
         const prismaUsersRepository = new PrismaUsersRepository()
         const registerUseCase = new RegisterUseCase(prismaUsersRepository)
-        
         // const usersRepository = new InMemoryUsersRepository()
         // const registerUseCase = new RegisterUseCase(usersRepository)
         await registerUseCase.execute({
