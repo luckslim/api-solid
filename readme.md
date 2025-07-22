@@ -11,3 +11,5 @@ docker stop <idContainer>
 docker rm <idContainer>
 docker compose up -d
 docker compose stop
+
+npm i vitest vite-tsconfig-paths -D
